@@ -1,9 +1,13 @@
 function App(){
 
+    const title = 'My Application'
+    const body = "message"
+
     return (
        <div className ="first class">
 
-            <h1>this message is coming from the Appp component</h1>
+            <h1>{title}</h1>
+            <p>{body}</p>
         </div>
     
     )
