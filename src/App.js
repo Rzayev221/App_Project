@@ -8,6 +8,17 @@ function App(){
     {id: 3 , text: 'blalaae21'}
     ]
 
+    const showcomments =  true
+    const commentblock = <div className="comments">
+    <p>Comments ({comments.length})</p>
+    <ul>{comments.map((comment, index)=> 
+    <li key={index}>{comment.text}</li>
+    )}
+    
+    </ul>
+
+</div>;
+
 
   
 
@@ -17,17 +28,9 @@ function App(){
             <h1>{title.toUpperCase()}</h1>
             <p>{body}</p>
 
-        <div className="comments">
-            <p>Comments ({comments.length})</p>
-            <ul>{comments.map((comment, index)=> 
-            <li key={index}>{comment.text}</li>
-            )}
-            
-            </ul>
-
-        </div>
+            {showcomments && commentblock }
+       
      </div>
     )
-}
-
+    }
 export default App
