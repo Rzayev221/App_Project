@@ -2,12 +2,14 @@ function App(){
 
     const title = 'My Application'
     const body = "message"
-
-
     const comments = [
-        {id:1 , text: "comment 1"},
-        {id: 2, text: "comment 2"}
+    {id: 1 , text: 'blabla'},
+    {id: 2 , text : 'blabal2'},
+    {id: 3 , text: 'blalaae21'}
     ]
+
+
+  
 
     return (
        <div className ='first class'>
@@ -15,24 +17,16 @@ function App(){
             <h1>{title.toUpperCase()}</h1>
             <p>{body}</p>
 
-        <div className="Commentss">
-            <h3>Comments {comments.length}</h3>
-            <ul>
-                {comments.map((comment, index) =>
-                  <li>{comment.text}</li>
-                
-                )}
-              
-    
+        <div className="comments">
+            <p>Comments ({comments.length})</p>
+            <ul>{comments.map((comment, index)=> 
+            <li key={index}>{comment.text}</li>
+            )}
+            
             </ul>
 
-
         </div>
-
-
      </div>
-
-
     )
 }
 
