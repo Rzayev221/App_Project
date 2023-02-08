@@ -1,7 +1,7 @@
 function App(){
 
     const title = 'My Application'
-    const body = "message"
+    const body = "messagea"
     const comments = [
     {id: 1 , text: 'blabla'},
     {id: 2 , text : 'blabal2'},
