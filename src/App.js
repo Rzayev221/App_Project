@@ -1,36 +1,29 @@
 function App(){
 
-    const title = 'My Application'
-    const body = "messagea"
-    const comments = [
-    {id: 1 , text: 'blabla'},
-    {id: 2 , text : 'blabal2'},
-    {id: 3 , text: 'blalaae21'}
+
+    const title = "My APp"
+    const body  = "my messages"
+
+    const comments = [{id : 1 , text: "blavblas"},
+    {id: 2, text : "blöavlösa"} 
     ]
 
-    const showcomments =  true
-    const commentblock = <div className="comments">
-    <p>Comments ({comments.length})</p>
-    <ul>{comments.map((comment, index)=> 
-    <li key={index}>{comment.text}</li>
-    )}
-    
-    </ul>
-
-</div>;
-
-
-  
+    const showComments = true;
+    const commentblock = <div className="COMMENTS">
+        <p>Comments ({comments.length})</p>
+        <ul>{comments.map((comment,index)=>
+        <li key ={index}> {comment.text}</li>)}
+        </ul>
+    </div>
 
     return (
-       <div className ='first class'>
-
-            <h1>{title.toUpperCase()}</h1>
+        <div className="myclass">
+            <h>{title.toUpperCase()}</h>
             <p>{body}</p>
-
-            {showcomments && commentblock }
-       
-     </div>
+            
+            <p>{showComments&&commentblock}</p>
+            </div>
     )
-    }
+}
+
 export default App
